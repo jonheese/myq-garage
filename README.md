@@ -7,7 +7,7 @@ Load it as a module, or download it and run directly.
 1. Download myq-garage.py to your device. Or use git ("git clone https://github.com/Einstein42/myq-garage.git")
 2. Put it in the same folder as your relay server if using any of io_guy's products.
 3. chmod 755 myq-garage.py
-4. Edit the file and put your myq username and password. Including ISY information if applicable.
+4. Copy `config-dist.ini` to `config.ini` and put your myq username and password in it. Including ISY information if applicable.
 
 Then use like so:
 Command Line options:

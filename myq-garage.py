@@ -1,4 +1,4 @@
-#!/usr/bin/python3
+#!/usr/bin/python
 
 ## Python to interface with MyQ garage doors.
 ## Thanks to xKing for the new API stuff. Find him on the UDI Forums.
@@ -316,7 +316,7 @@ class MyQ:
             res = self.fetch_device_json()
         instances = []
         if (res["ReturnCode"] == "0"):
-            devices = [d for d in res["Devices"] if d["MyQDeviceTypeId"] in [2,3,17]]
+            devices = [d for d in res["Devices"] if d["MyQDeviceTypeId"] in [2,3,7,17]]
             for d in devices:
                 dev_type = int(d["MyQDeviceTypeId"])
                 dev_id = d["MyQDeviceId"]
